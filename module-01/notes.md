@@ -32,19 +32,19 @@
 
   <title>The Basics</title>
 
-  // js goes here
+  // js can go here
+  <script>
+    console.log("js in head");
+  </script>
 
   </head>
 
   <body>
-  // top of body
 
   <h1>hello world</h1>
 
-  // JS at the bottom or footer
-  // loading external JS
+  // JS before the closing body tag
   <script src="javascript.js"></script>
-
   </body>
 </html>
 
@@ -68,7 +68,7 @@ TL;DR - use `const` by default, `let` when you need to and use camelCase notatio
 - `let`
 - `const`
 
-```javascript
+```js
 // function scoped
 var name = "Matt";
 // block scoped
@@ -125,3 +125,106 @@ Super helpful when working with others to enforce/keep uniform code. Also great 
 - [Object](#object)
 
 ### String
+
+>used for holding text
+
+strings can use:
+
+- single quotes `''`
+- double quotes `""`
+- backticks ``` `` ```
+
+Escape using `\` - in those cases, might be best to use backticks.
+
+#### Concatination
+
+> joining two or more things together
+
+#### interpolation
+
+> inserting a variable into a string
+
+```js
+const string1 = 'single quotes';
+const string2 = "double quotes";
+const string3 = `backticks`;
+
+// concatination
+const newString = string1 + string2;
+const string4 = "Pizza is rad." + " " + "Hot dogs are not.";
+
+// interpolation
+const nameFirst = "Matthew";
+const greeting = `Good morning ${nameFirst}.`;
+```
+
+### Number
+
+Javascript only has one type of Number "some other languages have different types for integers, floats, etc."
+
+Be careful with addition...if one of the values is a string then it will concatinate them together instead of adding.
+
+```js
+const addition = 1 + 1;
+
+// = 2
+
+const concatination = 1 + "1";
+
+// = 11
+```
+
+Hot tip: When working with money, don't use decimals/floats but rather convert everything into cents. So if the number you are working with is `$12.48` convert that to `1248` before working with it and add the decimal back when you're done.
+
+Also good to know...all of these are numbers in JS:
+
+- integers
+- floats
+- infinity
+- -infinity
+- NaN
+
+#### Basic Operators
+
+- addition `+` `+=`
+- subtraction `-` `-=`
+- multiplication `*` `*=`
+- division `/` `/=`
+- modulous "remainder of something" `%` `%=`
+- incrimentor `++`
+- decrimator `--`
+
+#### Comparison operators
+- equal to `==`
+- equal value and equal type "strict" `===`
+- not equal `!=`
+- not equal value and not equal type `!==`
+- greater than `>`
+- less than `<`
+- greater than or equal to `>=`
+- less than or equal to `<=`
+- and `&&`
+- or `||`
+- not `!`
+
+####
+
+### Boolean
+
+### Null
+
+### Undefined
+
+### Symbol
+
+### Object
+
+[JavaScript Objects](https://www.w3schools.com/jS/js_objects.asp)
+
+Objects are the biggest building block in Javascript. When you use an object in Javascript, you're wanting to group things together
+
+```js
+const obj = {"key": "value", "key2": "another value"};
+
+const person = {"name": "matthew", "age": 27, "eyeColor": "blue"};
+```
