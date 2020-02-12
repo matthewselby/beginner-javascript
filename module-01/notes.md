@@ -225,9 +225,21 @@ Also good to know...all of these are numbers in JS:
 
 ### Null
 
+One way to express *nothing* in Javascript. `null` must be explitly set, representing nothing.
+
+```js
+
+// perhaps you have an object but don't know all the values
+const person = {
+  first: 'cher';
+  last: null;
+}
+
+```
+
 ### Undefined
 
-Used to express *nothing* in Javascript. When you try to access a variable that has been created but not set. It is not defined or does not exist.
+One way to express *nothing* in Javascript. When you try to access a variable that has been created but not set. It is not defined or does not exist.
 
 ```js
 
