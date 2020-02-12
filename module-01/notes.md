@@ -176,6 +176,19 @@ const concatination = 1 + "1";
 
 Hot tip: When working with money, don't use decimals/floats but rather convert everything into cents. So if the number you are working with is `$12.48` convert that to `1248` before working with it and add the decimal back when you're done.
 
+```js
+// working with money
+
+// don't do this
+
+let price = 10.24;
+
+// do this - store money in whole numbers (cents)
+
+let price = 1024;
+
+```
+
 Also good to know...all of these are numbers in JS:
 
 - integers
@@ -195,6 +208,7 @@ Also good to know...all of these are numbers in JS:
 - decrimator `--`
 
 #### Comparison operators
+
 - equal to `==`
 - equal value and equal type "strict" `===`
 - not equal `!=`
@@ -206,8 +220,6 @@ Also good to know...all of these are numbers in JS:
 - and `&&`
 - or `||`
 - not `!`
-
-####
 
 ### Boolean
 
