@@ -118,11 +118,11 @@ Super helpful when working with others to enforce/keep uniform code. Also great 
 
 - [String](#string)
 - [Number](#number)
+- [Object](#object)
 - [Boolean](#boolean)
 - [Null](#null)
 - [Undefined](#undefined)
 - [Symbol](#symbol)
-- [Object](#object)
 
 ### String
 
