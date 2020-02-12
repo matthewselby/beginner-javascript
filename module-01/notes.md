@@ -227,6 +227,26 @@ Also good to know...all of these are numbers in JS:
 
 ### Undefined
 
+Used to express *nothing* in Javascript. When you try to access a variable that has been created but not set. It is not defined or does not exist.
+
+```js
+
+const person = {
+  first: 'hot';
+  last: 'dog';
+  age: '2';
+}
+
+// accessing a variable that does not exist
+console.log(hamburger);
+// returns undefined
+
+// accessing properties on something that doesn't exist
+console.log(person.dog);
+// returns undefinded
+
+```
+
 ### Symbol
 
 ### Object
