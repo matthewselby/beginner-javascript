@@ -237,13 +237,13 @@ const person = {
   age: '2';
 }
 
-const pizza;
+let pizza;
 
 // accessing a variable that does not exist
 console.log(hamburger);
 // returns error that the variable is not defined
 
-// accessing a variable that is not set
+// accessing a variable that has no value
 console.log(pizza);
 // returns undefined
 
