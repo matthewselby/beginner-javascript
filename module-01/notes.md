@@ -223,6 +223,28 @@ Also good to know...all of these are numbers in JS:
 
 ### Boolean
 
+A boolean is `True` or `False`, think of it like a lightswitch. We use this for `if` statements.
+
+```js
+
+let age = 19;
+const drinkingAge = age >= 21;
+
+// returns false
+console.log(drinkingAge);
+
+// almost always use ===
+// returns true
+console.log(100 == 100);
+
+// returns true
+console.log(100 == `100`);
+
+// returns false
+console.log(100 === `100`)
+
+```
+
 ### Null
 
 One way to express *nothing* in Javascript. `null` must be explitly set, representing nothing.
