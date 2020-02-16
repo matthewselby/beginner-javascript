@@ -128,10 +128,37 @@ const person = {
 ```
 ### Callback Functions
 
+[The Event Loop](https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif)
+
+Just a regular function but does something when something else is done. A function that gets passed into another function and is called by the browser in a later point in time.
+
 ```js
 // quick callback
+const button = document.querySelector(`.specialButton`);
+// normal function/callback function
+function handleClick() {
+  console.log(`The button has been clicked!!`);
+}
+// event listener, waits for a click then call a function "run callback function"
+button.addEventListener(`click`, handleClick)
 
+// can also pass an anonymous function
+buddon.addEventListener(`click`, function() {
+  console.log(`The button was clicked to trigger this anonymous function!`);
+});
 
+// Timer callback
+// call/run a function after a specified amount of time
+setTimout(someFunction, 1000);
 
+// can also pass anonymous/arrow functions
+setTimout(() => console.log(`After 1 second, this arrow function ran!`);, 1000);
 ```
+
 ## Debugging Tools
+
+### Console Methods
+
+[Conosle Web API Methods](https://developer.mozilla.org/en-US/docs/Web/API/console)
+
+a bunch of other useful developer tools for JS debugging in browsers.
