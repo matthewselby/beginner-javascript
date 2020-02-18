@@ -1,7 +1,9 @@
 # Functions
 
 [fetch get results from multiple URLs](https://codepen.io/matthewselby/pen/xxGGjjx?editors=0011)
+
 [create a simple timout](https://codepen.io/matthewselby/pen/WNvrZJa?editors=0011)
+
 [simple Dad Tax](https://codepen.io/matthewselby/pen/dyPNoPp)
 
 ## Functions - Built-in
