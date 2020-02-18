@@ -161,4 +161,4 @@ setTimout(() => console.log(`After 1 second, this arrow function ran!`);, 1000);
 
 [Conosle Web API Methods](https://developer.mozilla.org/en-US/docs/Web/API/console)
 
-a bunch of other useful developer tools for JS debugging in browsers.
+a bunch of other useful developer tools for JS debugging in browsers. super nifty.
