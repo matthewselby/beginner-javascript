@@ -1,7 +1,7 @@
 # The DOM - working with HTML and CSS
 
 [simple Dad Tax Calculator](https://codepen.io/matthewselby/pen/dyPNoPp)
-[The DOM - Cardio](https://codepen.io/matthewselby/pen/qBdZxod?editors=0010)
+[The DOM - Cardio](https://codepen.io/matthewselby/pen/qBdZxod?editors=0011)
 [MDN Document API](https://developer.mozilla.org/en-US/docs/Web/API/Document)
 
 We talked about the `window` which handles what's going on in the browser or the global scope. The `document` or Document Object Model handles everything on the page or document.
@@ -83,7 +83,6 @@ myImage.alt = `cool photo`;
 
 // actually add it to the HTML
 document.body.appendChild(`myImage`);
-
 ```
 
 challenge - create an unordered list with five list items:
@@ -114,3 +113,40 @@ five.insertAdjacentElement(`beforebegin`, four);
 
 document.body.appendChild(ul);
 ```
+
+## HTML from Strings and XSS
+
+You can create HTML or templates with strings using backticks. These can be added to the documnent but will be a string and not selectable elements...to get the HTML into the document as elements you can `createContextualFragment()`.
+
+```js
+// let's create our template string
+const title = `My cool title!`;
+const imgURL = `https://picsum.photos/500`;
+const imgAlt = `yummy food`;
+const myHTML = `
+  <div class="cool">
+    <h2>${title}</h2>
+    <p>Pretty Neat!</p>
+    <img src="${imgURL}" alt="${imgAlt}"/>
+  </div>
+`;
+// now we can add this to our document
+const placeToInject = document.querySelector(`#someID`);
+placeToInject.innerHTML = myHTML;
+console.log('myHTML');
+// ok great, we've replaced the innerHTML of that element with that ID with the string template we created...but it's still just a string.
+// turn a string into a DOM element
+const myFragment = document.createRange().createContextualFragment(myHTML);
+console.log(myFragment);
+// now they are DOM elements within a document-fragment
+console.log(myFragment.querySelector(`img`));
+// returns the img element within our myHTML 🎉
+// we can now do all the other JS things on these DOM elements
+const imgInMyHTML = myFragment.querySelector(`img`);
+imgInMyHTML.classList.add(`round`);
+```
+
+## Traversing and Removing Nodes
+
+[MDN Node Web API](https://developer.mozilla.org/en-US/docs/Web/API/Node)
+[MDN Elment Web API](https://developer.mozilla.org/en-US/docs/Web/API/Element)
