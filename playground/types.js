@@ -37,3 +37,18 @@ console.log(`Each kid gets ${kidsGet} pieces of candy.`);
 const floorKidsGet = math.floor( candy / kids );
 const dadGets = candy % kids;
 console.log(`But really, each kid gets ${floorKidsGet} and dad gets ${dadGets} pieces of candy.`);
+
+// Objects
+ const person {
+    firstName: `Matt`,
+    lastName: `Selby`,
+    likesPizsa: true;
+    hasDogs: false;
+    age: 100;
+ };
+
+// person.firstName
+// person.lastName
+// person.likesPizza
+// person.hasDogs
+// person.age
