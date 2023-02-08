@@ -52,3 +52,8 @@ console.log(`But really, each kid gets ${floorKidsGet} and dad gets ${dadGets} p
 // person.likesPizza
 // person.hasDogs
 // person.age
+
+// Null and Undefined
+// both nothing, but also both different nothings
+// many times something that isn't defnied is returned as undefined
+// specifically setting something to null is an option
