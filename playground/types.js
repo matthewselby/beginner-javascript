@@ -57,3 +57,15 @@ console.log(`But really, each kid gets ${floorKidsGet} and dad gets ${dadGets} p
 // both nothing, but also both different nothings
 // many times something that isn't defnied is returned as undefined
 // specifically setting something to null is an option
+
+// Booleans and Equality
+
+let someAge = 100;
+let anotherAge = "100";
+
+// someAge == anotherAge
+// returns true
+// someAge === anotherAge
+// returns false
+
+// booleans true/false
